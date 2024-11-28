@@ -1,0 +1,213 @@
+[
+  {
+    "HTML": [
+      {
+        "id": 1,
+        "instructor": "Osama Elzero",
+        "playListId": "PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji",
+        "lang": "HTML",
+        "discription": "Osama Elzero's HTML course is an excellent resource for beginners looking to learn web development from scratch. Offered in Arabic, this course provides a comprehensive introduction to HTML, starting with basic tags and progressing to more advanced concepts like semantic HTML. Osama's teaching style is known for being clear and accessible, making complex topics easy to understand. Each lesson includes practical examples, allowing students to apply what they learn immediately. The course also encourages hands-on learning through small projects, which helps reinforce concepts and provides real-world experience. It covers a wide range of topics, including HTML tags, forms, tables, lists, and best practices, ensuring that learners gain a solid understanding of how to structure web pages effectively. With a structured approach and a focus on fundamental concepts, Osama Elzero's HTML course is a valuable resource for anyone looking to master HTML and start their journey in web development."
+      },
+      {
+        "id": 2,
+        "instructor": "Abdelrahman Gamal",
+        "playListId": "PLknwEmKsW8OtLRQPTLms79499meY2D6ij",
+        "lang": "HTML",
+        "discription": "Abdelrahman Gamal's HTML course is an excellent option for those looking to master web development fundamentals in Arabic. The course offers a detailed and structured approach to learning HTML, starting from the very basics and gradually advancing to more complex concepts. Abdelrahman’s teaching style is engaging and easy to follow, making it accessible even for beginners with no prior experience in web development. Throughout the course, students will learn how to use HTML tags effectively, create forms, design tables, and structure content in a meaningful way. The course also emphasizes best practices in HTML and introduces the concept of semantic web design to help students write clean, efficient code. Abdelrahman uses real-life examples and provides hands-on projects, allowing learners to build practical skills while reinforcing theoretical knowledge. His course is well-suited for Arabic-speaking learners who prefer to study in their native language and want a solid foundation in HTML before moving on to more advanced topics in web development."
+      },
+      {
+        "id": 3,
+        "instructor": "Yaarob",
+        "playListId": "PLYyqC4bNbCIfMY5CoGmiWaPi9l86qaz5B",
+        "lang": "HTML",
+        "discription": "Tarmeez Academy's HTML course is a great choice for Arabic-speaking beginners looking to dive into web development. The course provides a comprehensive and structured learning path, covering the essentials of HTML in a clear and approachable manner. Tarmeez Academy's teaching style is focused on simplicity, ensuring that students understand the core concepts of HTML without feeling overwhelmed. The course starts with basic HTML tags and moves through more complex topics such as forms, tables, lists, and semantic HTML. It emphasizes the importance of clean and organized code, helping learners develop best practices for web development. Throughout the course, students are encouraged to practice what they learn with hands-on exercises and projects, which helps reinforce the material and build practical skills. With its practical examples and a focus on real-world applications, Tarmeez Academy’s HTML course provides a solid foundation for anyone interested in web development and looking to master HTML."
+      }
+    ]
+  },
+  {
+    "CSS": [
+      {
+        "id": 1,
+        "instructor": "Osama Elzero",
+        "playListId": "PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe",
+        "lang": "CSS",
+        "discription": "Osama Elzero's CSS course is an exceptional resource for learners who want to master CSS and style web pages effectively. Offered in Arabic, this course provides a thorough and easy-to-understand introduction to CSS, making it suitable for both beginners and those with some prior web development knowledge. Osama’s teaching style is clear and methodical, breaking down complex concepts into manageable pieces. The course covers everything from the basics of CSS selectors and properties to advanced topics like flexbox, grid layout, and responsive design. Osama also emphasizes best practices for writing clean, efficient, and maintainable CSS code. Throughout the course, students are encouraged to apply their learning through hands-on projects, which helps solidify their understanding and allows them to build practical skills. With a structured approach, real-world examples, and a focus on design principles, Osama Elzero's CSS course is an invaluable resource for anyone looking to create visually appealing and responsive websites."
+      },
+      {
+        "id": 2,
+        "instructor": "Abdelrahman Gamal",
+        "playListId": "PLknwEmKsW8Os7rKViMCL8x6irVJT7McSS",
+        "lang": "CSS",
+        "discription": "Abdelrahman Gamal's CSS course is a fantastic choice for Arabic-speaking learners who want to master styling web pages. The course is designed to cater to beginners while also providing enough depth for those who wish to enhance their CSS skills. Abdelrahman’s teaching style is engaging and straightforward, making complex concepts easy to grasp. The course covers a wide range of CSS topics, starting with the fundamentals such as selectors, properties, and values, and moving on to more advanced techniques like flexbox, grid, animations, and transitions. Abdelrahman places a strong emphasis on practical application, encouraging students to practice through hands-on exercises and mini-projects, ensuring they can implement what they've learned effectively. The course also focuses on writing clean, organized, and efficient CSS, teaching best practices to make the code more maintainable and scalable. With its clear explanations, real-world examples, and structured approach, Abdelrahman Gamal’s CSS course is an excellent choice for anyone looking to build visually stunning and responsive websites."
+      },
+      {
+        "id": 3,
+        "instructor": "yaarob",
+        "playListId": "PLYyqC4bNbCIdES52srHE6xTiIgvgMkBWu",
+        "lang": "CSS",
+        "discription": "Tarmeez Academy's CSS course is an excellent resource for Arabic-speaking learners aiming to enhance their web development skills by mastering CSS. The course provides a structured and beginner-friendly approach to learning CSS, making it ideal for those new to web design or looking to solidify their knowledge. It starts with the basics, such as CSS syntax, selectors, and properties, and progresses to more advanced topics like flexbox, grid layout, and responsive design. Tarmeez Academy emphasizes practical learning, incorporating real-world examples and hands-on projects that allow students to apply their knowledge effectively. The teaching style is clear and concise, focusing on simplicity to ensure that complex topics are easy to understand. Students are also taught best practices for writing clean and efficient CSS, enabling them to create maintainable and scalable designs. With its focus on practical application and a comprehensive curriculum, Tarmeez Academy's CSS course is a valuable tool for learners looking to create visually appealing and professional web pages."
+      }
+    ]
+  },
+  {
+    "JavaScript": [
+      {
+        "id": 1,
+        "instructor": "Abdelrahman Gamal",
+        "playListId": "PLknwEmKsW8OuTqUDaFRBiAViDZ5uI3VcE",
+        "lang": "JavaScript",
+        "discription": "Abdelrahman Gamal’s JavaScript course is a comprehensive resource for Arabic-speaking learners who want to master JavaScript, one of the most essential programming languages in web development. The course is designed to cater to beginners and those with basic programming knowledge, starting with JavaScript fundamentals such as variables, data types, and operators. Abdelrahman’s engaging and straightforward teaching style ensures that complex concepts, like loops, functions, and events, are easy to understand. The course also delves into more advanced topics, including DOM manipulation, API integration, and object-oriented programming. With an emphasis on hands-on learning, Abdelrahman encourages students to practice through practical examples and mini-projects, solidifying their understanding and building confidence in their skills. The course also introduces best practices for writing clean, efficient code and debugging. Abdelrahman Gamal's JavaScript course is ideal for learners seeking a strong foundation in JavaScript to create interactive and dynamic web applications."
+      },
+      {
+        "id": 2,
+        "instructor": "Osama Elzero",
+        "playListId": "PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv",
+        "lang": "JavaScript",
+        "discription": "Osama Elzero’s JavaScript course is a must-have for anyone looking to learn JavaScript from scratch or enhance their programming skills. Offered in Arabic, the course is beginner-friendly and provides a thorough introduction to JavaScript, covering everything from basic concepts like variables, functions, and control structures to advanced topics such as DOM manipulation, events, and object-oriented programming. Osama’s teaching style is highly praised for its clarity and attention to detail, making it easy for students to follow along and build a solid understanding of the language. The course includes numerous real-world examples and projects, helping learners apply their knowledge practically and confidently. Osama also emphasizes coding best practices, ensuring students write clean, efficient, and maintainable code. With its well-structured curriculum, engaging explanations, and hands-on approach, Osama Elzero's JavaScript course is an excellent choice for Arabic-speaking learners looking to master JavaScript and develop dynamic, interactive web applications."
+      },
+      {
+        "id": 3,
+        "instructor": "yaarob",
+        "playListId": "PLYyqC4bNbCIdvviLNbvYKfvHqszFPnUkj",
+        "lang": "JavaScript",
+        "discription": "Tarmeez Academy’s Beginner JavaScript course is an ideal starting point for Arabic-speaking learners who want to venture into programming with JavaScript. This course is designed to provide a simple and structured introduction to JavaScript, making it accessible for those with no prior experience. It covers foundational topics such as variables, data types, and functions, gradually progressing to essential concepts like loops, conditionals, and basic DOM manipulation. Tarmeez Academy's teaching style is straightforward and focuses on practical examples, ensuring students understand the concepts and can implement them effectively. The course emphasizes hands-on learning, encouraging students to practice through small exercises and beginner-friendly projects. It also introduces best practices for writing clean and efficient code, helping learners build good coding habits early on. With its approachable explanations and focus on fundamentals, Tarmeez Academy's Beginner JavaScript course is a perfect choice for anyone starting their JavaScript journey."
+      },
+      {
+        "id": 4,
+        "instructor": "yaarob",
+        "playListId": "PLYyqC4bNbCIeLEjcSPO61bsGPKEvYceb0",
+        "lang": "JavaScript",
+        "discription": "Tarmeez Academy's Advanced JavaScript course is an excellent resource for Arabic-speaking learners looking to deepen their understanding of JavaScript and build more sophisticated web applications. This course is tailored for those who already have a solid grasp of JavaScript basics and want to explore advanced concepts and techniques. It covers topics such as ES6+ features (arrow functions, destructuring, template literals, etc.), asynchronous programming with promises and async/await, advanced DOM manipulation, and event handling. The course also dives into object-oriented programming, module systems, and working with APIs to fetch and manipulate data dynamically.\n\nTarmeez Academy emphasizes practical learning by incorporating real-world examples and project-based exercises, allowing students to implement advanced JavaScript concepts in meaningful ways. The teaching style is clear and concise, with a focus on explaining complex topics in an easy-to-understand manner. Additionally, students are guided on best practices for writing scalable and maintainable code, which is essential for professional development. This course is perfect for those who want to elevate their JavaScript skills and become proficient in creating dynamic, high-performance web applications."
+      }
+    ]
+  },
+  {
+    "React": [
+      {
+        "id": 1,
+        "instructor": "yaarob",
+        "playListId": "PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS",
+        "lang": "React",
+        "discription": "Tarmeez Academy’s React course is designed for beginners and intermediate learners aiming to build modern web applications. It starts with React basics, such as components and state management, and advances to hooks, context, and API integration. The course includes practical projects, providing hands-on experience, and focuses on writing clean, efficient code. With its clear and straightforward teaching approach, this course is perfect for Arabic-speaking learners."
+      },
+      {
+        "id": 2,
+        "instructor": "Ali",
+        "playListId": "PLeWmXrh00478cne-60B6MeU85l42cry2v",
+        "lang": "React",
+        "discription": "Courses 4 Arab’s React course offers a beginner-friendly introduction to building web applications using React. It covers key concepts like components, props, and state, as well as more advanced topics like hooks and routing. The course emphasizes simplicity and hands-on learning, making it an excellent choice for Arabic-speaking students looking to develop their React skills through practical projects."
+      },
+      {
+        "id": 3,
+        "instructor": "Ahmed naser",
+        "playListId": "PLQtNtS-WfRa9LbmD8ON7rWhn-AtKTGdkn",
+        "lang": "React",
+        "discription": "Code Zone’s React course is a comprehensive guide for Arabic-speaking learners to master React. It covers foundational concepts like components, props, and state, progressing to advanced topics like hooks, context API, and React Router. The course is project-focused, enabling students to apply their learning to real-world scenarios. Code Zone’s teaching style is practical and engaging, making it ideal for those who want to quickly build dynamic, interactive web applications."
+      }
+    ]
+  },
+  {
+    "Angular": [
+      {
+        "id": 1,
+        "instructor": "Tag",
+        "playListId": "PLT0Ek_HGT21nDaUZkxZnP0nqsbCzuNXeW",
+        "lang": "Angular",
+        "discription": "Tag Channel’s Angular course is an excellent resource for Arabic-speaking learners aiming to master Angular. It covers core concepts such as components, modules, and directives, while advancing to services, routing, and state management. The course includes practical examples and projects, ensuring students gain hands-on experience. With a clear and concise teaching style, this course is ideal for beginners and intermediate learners looking to build dynamic web applications."
+      },
+      {
+        "id": 2,
+        "instructor": "Mohammed",
+        "playListId": "PLz5JOhlFdh1n_4SkiOgvU20vpll_PZGrl",
+        "lang": "Angular",
+        "discription": "AV Media Group’s Angular course offers a beginner-friendly and practical approach to learning Angular. The course focuses on essential concepts like components, templates, and data binding, along with advanced topics such as routing and dependency injection. Designed with real-world applications in mind, it’s perfect for Arabic-speaking learners seeking practical skills to create professional web applications."
+      },
+      {
+        "id": 3,
+        "instructor": "Hossam",
+        "playListId": "PLyr3gkJ8OBxq8NrFyel2U5tJSdgCtr0mK",
+        "lang": "Angular",
+        "discription": "VivaCode’s Angular course is a detailed guide for learners who want to dive deep into Angular. It starts with the basics, including components, directives, and modules, before progressing to advanced features like forms, routing, and services. With a project-based approach and engaging explanations, this course is well-suited for Arabic-speaking learners aiming to master Angular for professional development."
+      }
+    ]
+  },
+  {
+    "Vue": [
+      {
+        "id": 1,
+        "instructor": "Osama Elzero",
+        "playListId": "PLDoPjvoNmBAxr5AqK3Yz4DWYKVSmIFziw",
+        "lang": "Vue",
+        "discription": "Elzero Web School’s Vue course is a comprehensive resource for Arabic-speaking learners who want to master Vue.js. It starts with the basics, such as Vue components, directives, and reactive data, and gradually progresses to advanced topics like Vue Router, Vuex, and lifecycle hooks. The course emphasizes practical learning with hands-on projects, enabling students to apply their skills effectively. Osama Elzero’s clear and engaging teaching style makes this course an ideal choice for both beginners and intermediate learners looking to build dynamic and interactive web applications using Vue.js."
+      },
+      {
+        "id": 2,
+        "instructor": "Yappey",
+        "playListId": "PLW03K0dPCnA5T2hkHHT9-zyf73i0Stti-",
+        "lang": "Vue",
+        "discription": "Yapoey’s Vue course is a comprehensive guide for Arabic-speaking learners who want to dive into Vue.js. The course starts with the basics of Vue components, directives, and reactive data binding, and moves on to more advanced topics such as Vue Router, Vuex, and lifecycle hooks. With a project-based approach, Yapoey ensures that students can apply what they learn through practical exercises, making it an ideal course for those looking to build dynamic and interactive web applications using Vue.js."
+      }
+    ]
+  },
+  {
+    "Tailwind": [
+      {
+        "id": 1,
+        "instructor": "sabry Hosni",
+        "playListId": "PLxbVBWjVdAEjmn2KbE1886vVkPv1Iu67J",
+        "lang": "Tailwind",
+        "discription": "كورسات في البرمجة - Korsat X Parmaga\" offers a detailed TailwindCSS course in Arabic for beginners and intermediate learners. The course covers TailwindCSS fundamentals such as utility-first design, customizing themes, and responsive design techniques. It also includes practical projects to help students build visually appealing, mobile-friendly websites. The course’s clear explanations and hands-on approach make it ideal for learners who want to master TailwindCSS efficiently"
+      },
+      {
+        "id": 2,
+        "instructor": "Abd Elaziz gamal",
+        "playListId": "PLnD96kXp-_pMR9cBUmvsz_kIIt9bv2UIP",
+        "lang": "Tailwind",
+        "discription": "AG Coding’s TailwindCSS course focuses on helping Arabic-speaking learners master this popular CSS framework. It covers core concepts like utility classes, responsive design, and customizing TailwindCSS for unique projects. The course is practical, with real-world examples and projects that allow students to apply their knowledge to create modern, responsive websites. AG Coding’s approach ensures students learn efficiently while building a solid foundation in TailwindCSS."
+      }
+    ]
+  },
+  {
+    "bootstrap": [
+      {
+        "id": 1,
+        "instructor": "Sabry Hosni",
+        "playListId": "PLxbVBWjVdAEjom8KOV1c9aXMCz4IE0OZy",
+        "lang": "bootstrap",
+        "discription": "كورسات في البرمجة - Korsat X Parmaga\" offers an excellent Bootstrap 5 course in Arabic, designed for learners who want to quickly master this powerful CSS framework. The course covers all the essential features of Bootstrap 5, including grid systems, components, and utilities. Students also learn how to create responsive layouts and build interactive web elements. With a practical, hands-on approach, this course helps students apply what they learn to real-world projects."
+      },
+      {
+        "id": 2,
+        "instructor": "Osama Elzero",
+        "playListId": "PLDoPjvoNmBAyvm7f--dc6XqkpfDcen_vQ",
+        "lang": "bootstrap",
+        "discription": "Elzero Web School’s Bootstrap course is a great choice for Arabic-speaking learners who want to master Bootstrap 4 and 5. The course starts with basic concepts like grid systems and components and advances to more complex topics such as customizing Bootstrap and using utilities. Osama Elzero’s engaging teaching style, along with clear examples and projects, helps students effectively apply their skills to create responsive, mobile-first websites with ease."
+      },
+      {
+        "id": 3,
+        "instructor": "Abdelrahman Gamal",
+        "playListId": "PLknwEmKsW8OscL9GvjxwL7RYbcwwdIitk",
+        "lang": "bootstrap",
+        "discription": "Abdelrahman Gamal’s Bootstrap 4 course is an excellent resource for Arabic-speaking learners looking to master the Bootstrap framework. The course covers the fundamentals of Bootstrap 4, including the grid system, components, and utilities, along with advanced features such as customizing themes and building responsive layouts. Abdelrahman’s clear, step-by-step teaching style ensures that learners can easily understand and apply Bootstrap’s features in real-world projects. With hands-on exercises and practical examples, this course is perfect for anyone wanting to create modern, responsive web designs using Bootstrap 4."
+      }
+    ]
+  },
+  {
+    "git": [
+      {
+        "id": 1,
+        "instructor": "Osama Elzero",
+        "playListId": "PLDoPjvoNmBAw4eOj58MZPakHjaO3frVMF",
+        "lang": "git",
+        "discription": "Elzero Web School’s Git course is a great choice for Arabic-speaking learners looking to understand version control using Git. The course covers the fundamentals of Git, including creating repositories, committing changes, and branching. Osama Elzero’s clear and engaging teaching style helps students grasp key concepts like merging, resolving conflicts, and using GitHub. With practical examples and hands-on exercises, this course ensures learners are well-equipped to manage code and collaborate effectively in software development projects."
+      },
+      {
+        "id": 2,
+        "instructor": "Yaarob",
+        "playListId": "PLYyqC4bNbCIeCHLTRtwdLpQvle_zIavZ-",
+        "lang": "git",
+        "discription": "Tarmeez Academy’s Git course provides a beginner-friendly introduction to version control. The course covers basic Git operations like initializing repositories, staging changes, and committing, as well as more advanced concepts like branching, merging, and collaborating with GitHub. Tarmeez Academy’s clear explanations and practical exercises ensure that learners can apply Git to real-world projects, making this course a perfect choice for Arabic-speaking students who want to manage code efficiently and collaborate with others in development teams."
+      }
+    ]
+  }
+]
