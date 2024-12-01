@@ -1,64 +1,61 @@
-// import express and config
+// Import dependencies
 import express from "express";
-const app = express();
-app.use(express.json());
-
-// import dotenv
 import dotenv from "dotenv";
-dotenv.config({path:"./config/config.env"});
-
-// import morgan
 import morgan from "morgan";
-app.use(morgan("dev"));
-
-import cors from 'cors';
-
-
-app.use(cors({
-  origin: 'http://localhost:3000', 
-  credentials: true,
-  allowedHeaders: ["Content-Type", "Authorization"]
-}));
-
-
-
-// import connect Db
-import { connectDb } from './config/db.js';
-
-// import router
-import users from './routes/users.js';
-import courses from './routes/courses.js';
-import admins from './routes/admins.js';
-
-// routes
-import {
-    verifyAdminToken,
-    addAdmin
-} from "./controlers/admins.js";
+import cors from "cors";
 import jwt from "jsonwebtoken";
+
+// Import local modules
+import { connectDb } from "./config/db.js";
+import users from "./routes/users.js";
+import courses from "./routes/courses.js";
+import admins from "./routes/admins.js";
+import { verifyAdminToken, addAdmin } from "./controlers/admins.js";
 import User from "./models/User.js";
 import Admin from "./models/Admin.js";
 
-app.get('/api/v1/admin/check', verifyAdminToken, (req, res) => {
+// Initialize app and environment variables
+dotenv.config({ path: "./config/config.env" });
+const app = express();
+const PORT = process.env.PORT || 22756;
+
+// Middleware setup
+app.use(express.json());
+app.use(morgan("dev"));
+app.use(
+  cors({
+    origin: "http://localhost:3000", // Allow the frontend origin
+    credentials: true, // Allow cookies and credentials
+    allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Specify allowed methods
+  })
+);
+
+// Routes
+app.get("/api/v1/admin/check", verifyAdminToken, (req, res) => {
   res.json({
-    message: 'Authorized access',
-    admin: req.admin.role
+    message: "Authorized access",
+    admin: req.admin.role,
   });
 });
-app.post('/api/v1/admin/add', async (req, res) => {
+
+app.post("/api/v1/admin/add", async (req, res) => {
   const admin = await addAdmin(req, res);
   res = admin;
 });
 
-// app.use("/admin", admins);
 app.use("/api/v1/users", users);
 app.use("/api/v1/courses", courses);
+app.use("/admin", admins);
 
-// start the server
-app.listen(22756 || 3000 || process.env.PORT , async () => {
-    
-        await connectDb();
-        console.log("Server is running at 22756");
-        console.log("db is connected")
-    
+// Start the server and connect to the database
+app.listen(PORT, async () => {
+  try {
+    await connectDb();
+    console.log(`Server is running on port ${PORT}`);
+    console.log("Database is connected");
+  } catch (error) {
+    console.error("Error connecting to the database:", error.message);
+    process.exit(1);
+  }
 });
