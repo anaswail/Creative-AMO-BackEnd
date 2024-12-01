@@ -10,9 +10,7 @@ import { connectDb } from "./config/db.js";
 import users from "./routes/users.js";
 import courses from "./routes/courses.js";
 import admins from "./routes/admins.js";
-import { verifyAdminToken, addAdmin } from "./controlers/admins.js";
-import User from "./models/User.js";
-import Admin from "./models/Admin.js";
+import { verifyAdminToken, addAdmin } from "./controllers/admins.js";
 
 // Initialize app and environment variables
 dotenv.config({ path: "./config/config.env" });
@@ -24,7 +22,7 @@ app.use(express.json());
 app.use(morgan("dev"));
 app.use(
   cors({
-    origin: "http://localhost:3000", // Allow the frontend origin
+    origin: "http://localhost:3000", // Allow frontend origin
     credentials: true, // Allow cookies and credentials
     allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Specify allowed methods
@@ -41,7 +39,7 @@ app.get("/api/v1/admin/check", verifyAdminToken, (req, res) => {
 
 app.post("/api/v1/admin/add", async (req, res) => {
   const admin = await addAdmin(req, res);
-  res = admin;
+  res.json(admin);
 });
 
 app.use("/api/v1/users", users);
