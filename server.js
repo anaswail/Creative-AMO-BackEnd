@@ -55,7 +55,7 @@ app.use("/api/v1/users", users);
 app.use("/api/v1/courses", courses);
 
 // start the server
-app.listen(22756, async () => {
+app.listen(22756 || 3000 || process.env.PORT , async () => {
     
         await connectDb();
         console.log("Server is running at 22756");
