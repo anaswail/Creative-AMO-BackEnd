@@ -20,14 +20,31 @@ const PORT = process.env.PORT || 22756;
 // Middleware setup
 app.use(express.json());
 app.use(morgan("dev"));
+
+// Configure CORS
 app.use(
   cors({
-    origin: "http://localhost:3000", // Allow frontend origin
+    origin: [
+      "https://thoughtless-effectst.surge.sh", // Frontend URL
+      "http://localhost:3000", // Local development URL
+    ],
     credentials: true, // Allow cookies and credentials
     allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Specify allowed methods
+    optionsSuccessStatus: 204, // Prevent OPTIONS response redirects
   })
 );
+
+// Avoid redirects for HTTPS requests
+app.enable("trust proxy"); // For proxies (e.g., Vercel)
+// Force HTTPS if required
+app.use((req, res, next) => {
+  if (req.secure || req.headers["x-forwarded-proto"] === "https") {
+    next();
+  } else {
+    res.status(403).send("HTTPS Required");
+  }
+});
 
 // Routes
 app.get("/api/v1/admin/check", verifyAdminToken, (req, res) => {
