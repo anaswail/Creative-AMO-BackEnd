@@ -24,12 +24,29 @@ app.use(express.json());
 app.use(morgan("dev"));
 app.use(
   cors({
-    origin: "https://creative-amo.vercel.app/", // Allow the frontend origin
+    origin: (origin, callback) => {
+      const allowedOrigins = [
+        "https://creative-amo.vercel.app", // Main frontend URL
+        "https://creative-amo.vercel.app/", // With trailing slash
+        "http://localhost:3000", // Local development
+      ];
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true); // Allow the request
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
     credentials: true, // Allow cookies and credentials
     allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
-    methods: "GET, POST, PUT, DELETE,OPTIONS", // Specify allowed methods
+    methods: "GET, POST, PUT, DELETE, OPTIONS", // Specify allowed methods
   })
 );
+
+// Debugging: Log request origins
+app.use((req, res, next) => {
+  console.log("Request origin:", req.headers.origin);
+  next();
+});
 
 // Routes
 app.get("/api/v1/admin/check", verifyAdminToken, (req, res) => {
