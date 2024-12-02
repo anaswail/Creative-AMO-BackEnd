@@ -1,8 +1,8 @@
 // Import dependencies
-import express from "express";
-import dotenv from "dotenv";
-import morgan from "morgan";
 import cors from "cors";
+import dotenv from "dotenv";
+import express from "express";
+import morgan from "morgan";
 
 // Import local modules
 import { connectDb } from "./config/db.js";
@@ -26,26 +26,10 @@ app.use((req, res, next) => {
 // CORS Middleware
 app.use(
   cors({
-    origin: (origin, callback) => {
-      const allowedOrigins = [
-        "https://creative-amo.vercel.app",
-        "http://localhost:3000",
-      ];
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        console.error(`CORS Rejected for origin: ${origin}`);
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
+    origin: [process.env.CLIENT_DEV_URL, process.env.CLIENT_PROD_URL],
     credentials: true,
-    allowedHeaders: ["Content-Type", "Authorization"],
-    methods: "GET, POST, PUT, DELETE, OPTIONS",
-  })
+  }),
 );
-
-// Preflight Handling
-app.options("*", cors());
 
 // Routes
 app.use("/api/v1/users", users);
