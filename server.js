@@ -24,28 +24,32 @@ app.use((req, res, next) => {
 });
 
 // CORS Middleware
+const allowedOrigins = [
+  "https://creative-amo.vercel.app",
+  "http://localhost:3000",
+];
+
 app.use(
   cors({
     origin: (origin, callback) => {
-      const allowedOrigins = [
-        "https://creative-amo.vercel.app",
-        "http://localhost:3000",
-      ];
+      // Allow requests with no origin (e.g., mobile apps, Postman, etc.)
       if (!origin || allowedOrigins.includes(origin)) {
         callback(null, true);
       } else {
         console.error(`CORS Rejected for origin: ${origin}`);
-        callback(new Error("Not allowed by CORS"));
+        callback(new Error("CORS not allowed for this origin"));
       }
     },
     credentials: true,
-    allowedHeaders: ["Content-Type", "Authorization"],
     methods: "GET, POST, PUT, DELETE, OPTIONS",
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 
-// Preflight Handling
-app.options("*", cors());
+// Handle Preflight Requests
+app.options("*", (req, res) => {
+  res.sendStatus(200);
+});
 
 // Routes
 app.use("/api/v1/users", users);
