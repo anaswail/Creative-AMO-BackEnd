@@ -1,29 +1,18 @@
-// Import dependencies
-import cors from "cors";
-import dotenv from "dotenv";
 import express from "express";
-import morgan from "morgan";
-
-// Import local modules
-import { connectDb } from "./config/db.js";
-import users from "./routes/users.js";
-
-// Initialize app and environment variables
-dotenv.config({ path: "./config/config.env" });
 const app = express();
+app.use(express.json());
+
+// import dotenv
+import dotenv from "dotenv";
+dotenv.config({ path: "./config/config.env" });
 const PORT = process.env.PORT || 3000;
 
-// Middleware setup
-app.use(express.json());
+// import morgan
+import morgan from "morgan";
 app.use(morgan("dev"));
 
-// Debug: Log every request
-app.use((req, res, next) => {
-  console.log(`Incoming request: ${req.method} ${req.url}`);
-  next();
-});
+import cors from "cors";
 
-// CORS Middleware
 app.use(
   cors({
     origin: [process.env.CLIENT_DEV_URL, process.env.CLIENT_PROD_URL],
@@ -31,10 +20,35 @@ app.use(
   })
 );
 
-// Routes
-app.use("/api/v1/users", users);
+// import connect Db
+import { connectDb } from "./config/db.js";
 
-// Start the server and connect to the database
+// import router
+import users from "./routes/users.js";
+import courses from "./routes/courses.js";
+import admins from "./routes/admins.js";
+
+// routes
+import { verifyAdminToken, addAdmin } from "./controlers/admins.js";
+import jwt from "jsonwebtoken";
+import User from "./models/User.js";
+import Admin from "./models/Admin.js";
+
+app.get("/api/v1/admin/check", verifyAdminToken, (req, res) => {
+  res.json({
+    message: "Authorized access",
+    admin: req.admin.role,
+  });
+});
+app.post("/api/v1/admin/add", async (req, res) => {
+  const admin = await addAdmin(req, res);
+  res = admin;
+});
+
+// app.use("/admin", admins);
+app.use("/api/v1/users", users);
+app.use("/api/v1/courses", courses);
+
 app.listen(PORT, async () => {
   try {
     await connectDb();
